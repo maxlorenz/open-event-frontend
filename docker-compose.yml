@@ -5,7 +5,7 @@ services:
     build: .
     environment:
       GOOGLE_API_KEY: 'Sample Key'
-      API_HOST: http://localhost:5000
+      API_HOST: "@{SERVER_NAME}:5000"
     network_mode: "host"
     ports:
-      - 127.0.0.1:4200:4200
+      - 0.0.0.0:4200:4200
